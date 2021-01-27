@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+.box{
+    width: 600px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    transform-style: preserve-3d;
+    width: 300px;
+    height: 500px;
+    box-shadow: 2px 1px 20px 4px #886262, 2px 1px 20px 4px #886262;
+    text-align: center;
+}
+.image{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    z-index: 1;
+    width: 275px;
+}
+h1, p{
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #454545;
+}
+p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.circle{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        rgba(245, 70, 66, 0.5),
+        rgba(8, 86, 156, 0.5)
+    );
+}
+.button{
+    margin-top: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background-color: rgba(8, 86, 156, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: rgba(245, 70, 66, 0.5);
+    color: #454545;
+}
+.purchase{
+    margin-top: 20px;
+    width: 250px;
+    height: 35px;
+    background-color: rgba(245, 70, 66, 0.5);
+    cursor: pointer;
+    border: none;
+}
